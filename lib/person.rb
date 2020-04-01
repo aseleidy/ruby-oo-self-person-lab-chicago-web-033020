@@ -64,4 +64,14 @@ class Person
         self.hygiene=(post_work_out_hygiene)
         return "♪ another one bites the dust ♫"
     end
+    
+    def call_friend(friend)
+        call_happy = @happiness += 3
+        self.happiness=(call_happy)
+        friend.happiness=(call_happy)
+
+        if friend == "Felix"
+            return "Hi #{friend.name}! It's #{:name}. How are you?"
+        end 
+    end 
 end
