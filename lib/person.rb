@@ -58,8 +58,10 @@ class Person
     end
       
     def work_out
-        @happiness += 2
-        @hygiene -= 3
-        return "another one bites the dust"
+        ew_happy = @happiness += 2
+        self.happiness=(new_happy)
+        post_work_out_hygiene = @hygiene -= 3
+        self.hygiene=(post_work_out_hygiene)
+        return "♪ another one bites the dust ♫"
     end
 end
