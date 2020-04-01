@@ -68,7 +68,7 @@ class Person
     
     def call_friend(friend)
         call_happy = @happiness += 3
-        self.happiness=(self.happiness += 3)
+        self.happiness=(call_happy)
     
         friend.happiness=(friend.happiness += 3)
 
