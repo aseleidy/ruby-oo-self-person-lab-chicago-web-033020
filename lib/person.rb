@@ -12,9 +12,9 @@ class Person
     end 
     
     def happiness=(num)
-        if num >= 10
+        if num > 10
             @happiness = 10
-        elsif num <= 0
+        elsif num < 0
             @happiness = 0
         else
             @happiness = num
@@ -22,9 +22,9 @@ class Person
      end
 
     def hygiene=(num)
-        if num > 10
+        if num >= 10
             @hygiene = 10
-        elsif num < 0
+        elsif num <= 0
             @hygiene = 0
         else
             @hygiene = num
@@ -48,32 +48,29 @@ class Person
     end
 
     def get_paid(salary)
-        @bank_account += salary
+        self.bank_account += salary
         return "all about the benjamins"
     end
       
     def take_bath
-        new_hygiene = @hygiene += 4
-        self.hygiene=(new_hygiene)
+        self.hygiene += 4
         return "♪ Rub-a-dub just relaxing in the tub ♫"
     end
       
     def work_out
-        new_happy = @happiness += 2
-        self.happiness=(new_happy)
-        post_work_out_hygiene = @hygiene -= 3
-        self.hygiene=(post_work_out_hygiene)
+        self.happiness += 2
+        self.hygiene -= 3
         return "♪ another one bites the dust ♫"
     end
-    
-    def call_friend(friend)
-        #call_happy = @happiness += 3
-         self.happiness=(self.happiness += 3)
-    
-        friend.happiness=(friend.happiness += 3)
 
-        if friend.name == "Felix"
-            return "Hi #{friend.name}! It's #{:name}. How are you?"
-        end 
+    def call_friend(friend)
+        self.happiness += 3
+        friend.happiness += 3
+
+        return "Hi #{friend.name}! It's #{self.name}. How are you?"
+    end 
+
+    def start_coversation 
+
     end 
 end
