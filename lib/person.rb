@@ -70,7 +70,7 @@ class Person
         return "Hi #{friend.name}! It's #{self.name}. How are you?"
     end 
 
-    def start_coversation 
+    def start_coversation(partner, topic) 
 
     end 
 end
