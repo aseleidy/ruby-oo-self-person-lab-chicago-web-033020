@@ -58,7 +58,7 @@ class Person
     end
       
     def work_out
-        ew_happy = @happiness += 2
+        new_happy = @happiness += 2
         self.happiness=(new_happy)
         post_work_out_hygiene = @hygiene -= 3
         self.hygiene=(post_work_out_hygiene)
