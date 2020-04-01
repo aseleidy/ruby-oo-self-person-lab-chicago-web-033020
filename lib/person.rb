@@ -70,8 +70,8 @@ class Person
         self.happiness=(call_happy)
         friend.happiness=(call_happy)
 
-        if friend == "Felix"
-            return "Hi #{friend.name}! It's #{:name}. How are you?"
-        end 
+        # if friend == "Felix"
+        #     return "Hi #{friend.name}! It's #{:name}. How are you?"
+        # end 
     end 
 end
