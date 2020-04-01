@@ -67,14 +67,6 @@ class Person
     end
     
     def call_friend(friend)
-      
-        call_happy = @happiness += 3
-        self.happiness=(call_happy)
-        binding.pry
-        friend_is_happy? = friend.happiness
-        happyy = friend_is_happy? += 3
-        friend.happiness=(happyy)
-        
         # call_happy = @happiness += 3
         # self.happiness=(call_happy)
         # binding.pry
