@@ -1,4 +1,5 @@
 # your code goes here
+require 'pry'
 class Person 
     attr_reader :name, :happiness, :hygiene
     attr_writer
@@ -68,6 +69,7 @@ class Person
     def call_friend(friend)
         call_happy = @happiness += 3
         self.happiness=(call_happy)
+        binding.pry
         friend.happiness=(call_happy)
 
         # if friend == "Felix"
