@@ -53,7 +53,7 @@ class Person
       
     def take_bath
         new_hygiene = @hygiene += 4
-        hygiene=(new_hygiene)
+        self.hygiene=(new_hygiene)
         return "♪ Rub-a-dub just relaxing in the tub ♫"
     end
       
