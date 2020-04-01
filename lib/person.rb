@@ -67,14 +67,13 @@ class Person
     end
     
     def call_friend(friend)
-        # call_happy = @happiness += 3
-        # self.happiness=(call_happy)
-        # binding.pry
-        # friend_happier = friend.happiness += 3
-        # friend.happiness=(friend_happier)
+        call_happy = @happiness += 3
+        self.happiness=(call_happy)
+    
+        friend.happiness=(friend.happiness += 3)
 
-        # if friend == "Felix"
-        #     return "Hi #{friend.name}! It's #{:name}. How are you?"
-        # end 
+        if friend == "Felix"
+            return "Hi #{friend.name}! It's #{:name}. How are you?"
+        end 
     end 
 end
